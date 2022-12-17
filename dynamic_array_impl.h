@@ -39,7 +39,7 @@ __DEF_HELPER(DEFINE_ARRAY_POP, ARRAY_ELEMENT)
 {
     LOG_ASSERT(array->size > 0, return);
 
-    delete_element(&array->data[array->size]);
+    delete_element(array_back(array));
     array->size--;
 
     if (array->size * 4 <= array->capacity && array->capacity > DEFAULT_CAP)
