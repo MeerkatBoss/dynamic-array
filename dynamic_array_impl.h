@@ -1,7 +1,6 @@
 #include <stdlib.h>
 
 #include "logger.h"
-#include "dynamic_array.h"
 
 static const size_t DEFAULT_CAP = 16;
 
