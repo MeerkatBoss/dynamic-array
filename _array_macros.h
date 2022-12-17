@@ -25,3 +25,10 @@ void array_copy(dynamic_array(type)* dest, const dynamic_array(type)* src)
 
 #define DEFINE_ARRAY_GET(type) \
 type* array_get_element(const dynamic_array(type)* array, size_t index)
+
+#define DEFINE_ARRAY_FRONT(type) \
+type* array_front(const dynamic_array(type)* array)
+
+#define DEFINE_ARRAY_BACK(type) \
+type* array_back(const dynamic_array(type)* array)
+

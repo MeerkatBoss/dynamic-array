@@ -1,6 +1,7 @@
 #include <stdlib.h>
 
 #include "logger.h"
+#include "dynamic_array.h"
 
 static const size_t DEFAULT_CAP = 16;
 
@@ -66,4 +67,15 @@ __DEF_HELPER(DEFINE_ARRAY_GET, ARRAY_ELEMENT)
     return &array->data[index];
 }
 
+__DEF_HELPER(DEFINE_ARRAY_FRONT, ARRAY_ELEMENT)
+{
+    LOG_ASSERT(array->size > 0, return NULL);
+    return &array->data[0];
+}
+
+__DEF_HELPER(DEFINE_ARRAY_BACK, ARRAY_ELEMENT)
+{
+    LOG_ASSERT(array->size > 0, return NULL);
+    return &array->data[array->size - 1];
+}
 #undef __DEF_HELPER
