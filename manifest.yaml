@@ -1,6 +1,6 @@
 name: dynamicarray
 type: lib
-version: 0.0.1
+version: 1.0.0
 author: MeerkatBoss
 author_email: solodovnikov.ia@phystech.edu
 description: Dynamic array implementation in C
