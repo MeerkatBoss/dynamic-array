@@ -1,0 +1,8 @@
+build/
+dist/
+doxygen/
+.vscode/
+*.log
+*.aux
+*.out
+logs.html

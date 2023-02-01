@@ -1,0 +1,12 @@
+name: dynamicarray
+type: lib
+version: 0.0.1
+author: MeerkatBoss
+author_email: solodovnikov.ia@phystech.edu
+description: Dynamic array implementation in C
+sources: []
+headers:
+- dynamic_array.h
+- dynamic_array_impl.h
+- _array_macros.h
+modules: []
